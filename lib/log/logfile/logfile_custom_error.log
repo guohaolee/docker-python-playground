@@ -1,0 +1,5 @@
+2019-11-23 01:49:37 - [example2/ERROR] - [hubdev/123123] - Things went wrong
+Traceback (most recent call last):
+  File "example1.py", line 87, in <module>
+    raise Exception("Error Occured")
+Exception: Error Occured

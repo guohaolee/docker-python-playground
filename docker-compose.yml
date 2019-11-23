@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  python:
+    build: .
+    privileged: true
+    hostname: playground_dev
+    ports:
+      - 8081:5000
+    depends_on:
+      - redis
+      # - postgres
+      # - mysql
+      # - mongo
+    volumes:
+      - ${PWD}:/app
+    
+  redis:
+    image: redis:5.0
+    restart: always
+    ports:
+      - 6379:6379
+  
+  # postgres:
+  #   image: postgres
+  #   restart: always
+  #   environment: 
+  #     - POSTGRES_PASSWORD=password
+  #     - POSTGRES_USER=master
+  #     - POSTGRES_DB=testdb
+  
+  # mysql:
+  #   image: mysql:5.7
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: password
+  #     MYSQL_DATABASE: testdb
+  #   ports:
+  #     - "3308:3306"
+  
+  # mongo:
+  #   image: mongo
+  #   environment: 
+  #     # - MONGO_INITDB_DATABASE=salesdb
+  #     - MONGO_INITDB_ROOT_USERNAME=master
+  #     - MONGO_INITDB_ROOT_PASSWORD=master
+  #   ports:
+  #     - 27017-27019:27017-27019
+  #   restart: always
+  
+  admin:    
+    image: adminer    
+    ports:      
+      - "8084:8080"

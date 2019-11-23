@@ -1,0 +1,33 @@
+2019-11-23 01:04:08 - [__main__/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:04:39 - [example1/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:23:58 - [example1/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:23:58 - [__main__/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:25:53 - [example1/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:25:53 - [__main__/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:26:12 - [example1/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:26:12 - [__main__/INFO] - [hubdev/123123] - Hello from INFO
+2019-11-23 01:26:12 - [root/ERROR] - [hubdev/123123] - Things went wrong
+Traceback (most recent call last):
+  File "example1.py", line 75, in <module>
+    raise Exception("Error Occured")
+Exception: Error Occured
+2019-11-23 01:46:45 - [__main__/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:47:15 - [__main__/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:47:59 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:47:59 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:48:54 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:48:54 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:49:21 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:49:21 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:49:37 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:49:37 - [example2/INFO] - [hubdev/123123] -  INFO DATA HERE
+2019-11-23 01:49:37 - [example2/ERROR] - [hubdev/123123] - Things went wrong
+Traceback (most recent call last):
+  File "example1.py", line 87, in <module>
+    raise Exception("Error Occured")
+Exception: Error Occured
+2019-11-23 01:49:37 - [example2/ERROR] - [hubdev/123123] - Things went wrong
+Traceback (most recent call last):
+  File "example1.py", line 87, in <module>
+    raise Exception("Error Occured")
+Exception: Error Occured
